@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>MARCEL — DIRT ON TIRES</title>
+    <meta name="description" content="MARCEL is an Indonesian creator documenting machines, places, and people that choose the long way through." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="MARCEL — DIRT ON TIRES" />
+    <meta property="og:description" content="An Indonesian field notebook for machines, places, and people who choose the long way through." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MARCEL — DIRT ON TIRES" />
+    <meta name="twitter:description" content="An Indonesian field notebook for machines, places, and people who choose the long way through." />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // Restore the original URL after GitHub Pages falls back through 404.html.
+      const redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect !== location.href) {
+        history.replaceState(null, '', redirect);
+      }
+    </script>
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>
