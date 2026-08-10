@@ -5,20 +5,24 @@ machines, places, and people that choose the long way through.
 
 ## GitHub Pages
 
-The production files are generated in `dist/public`:
+Use the **root-level `index.html`** in this project. It is a complete,
+standalone file: CSS and JavaScript are already inside it, so do not upload the
+`artifacts` folder and do not upload only the `src` folder.
 
-```bash
-pnpm install
-pnpm --filter @workspace/web run build
-```
+In GitHub, choose **Settings → Pages → Deploy from a branch**, then select:
 
-Publish the contents of `dist/public` with GitHub Pages. The build uses
-portable relative asset paths and includes `404.html` so the site continues to
-work when hosted from a repository URL such as:
+- Branch: `main`
+- Folder: `/ (root)`
+
+The URL will then be:
 
 ```text
 https://USERNAME.github.io/REPOSITORY/
 ```
 
-The source entry point is `index.html`. Update the GitHub and Instagram links
-in `src/App.tsx` with Marcel's real profiles before publishing.
+The filename is case-sensitive and must be exactly `index.html` in lowercase.
+If Pages is configured to use `/docs` instead, place this same file directly
+inside a root-level `docs` folder.
+
+Update the GitHub and Instagram links inside `index.html` with Marcel's real
+profiles before publishing.
